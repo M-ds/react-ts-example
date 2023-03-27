@@ -37,5 +37,12 @@
   "files": [
     "dist",
     "README.md"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "bugs": {
+    "url": "https://github.com/M-ds/react-ts-example/issues"
+  },
+  "homepage": "https://github.com/M-ds/react-ts-example#readme"
 }
