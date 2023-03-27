@@ -30,10 +30,6 @@
     "react-dom": "^18.2.0",
     "typescript": "^5.0.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/m-ds/react-ts-example.git"
-  },
   "files": [
     "dist",
     "README.md"
@@ -42,7 +38,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "bugs": {
-    "url": "https://github.com/M-ds/react-ts-example/issues"
+    "url": "https://github.com/m-ds/react-ts-example/issues"
   },
-  "homepage": "https://github.com/M-ds/react-ts-example#readme"
+  "homepage": "https://github.com/m-ds/react-ts-example#readme"
 }
