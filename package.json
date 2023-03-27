@@ -1,18 +1,41 @@
 {
   "name": "react-ts-example",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "sample project with react and typescript",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "example",
+    "typescript",
+    "react"
+  ],
+  "author": "Michiel de Smet",
   "devDependencies": {
     "@types/react": "^18.0.29",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-ds/react-ts-example.git"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }
