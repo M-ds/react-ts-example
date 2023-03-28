@@ -6,6 +6,7 @@
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "scripts": {
+    "start" : "react-scripts start",
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
@@ -40,10 +41,6 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "bugs": {
-    "url": "https://github.com/m-ds/react-ts-example/issues"
-  },
-  "homepage": "https://github.com/m-ds/react-ts-example#readme",
   "browserslist": {
     "production": [
       ">0.2%",
