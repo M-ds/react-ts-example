@@ -2,12 +2,15 @@
 
 Ui library to play around with React and UI5 Web components
 
-## Structure
+## Development
 
-All created components should be stored in the components' folder.
+Created components are stored in the components folder.
+To view your changed, change the name of the index.ts temporarily (otherwise the changes won't be visible).
+Add changed code to the `App.tsx`
 
-The example folder, is created to have the option to check, and test the created components.
-However, these can only be tested once they are deployed. (setup for now)
+## Deployment
+- Make sure the `index.ts` is present
+- Make sure all the exportable components are present in this file.
 
 ## How to import
 - Generate a token in GitHub with at least read:package property
