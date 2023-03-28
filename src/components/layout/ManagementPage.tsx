@@ -1,10 +1,9 @@
-import {Bar, Button, FlexBox, Label, Page, ProductSwitch, ProductSwitchItem} from "@ui5/webcomponents-react"
+import {Bar, Button, FlexBox, Label, Page, ProductSwitch} from "@ui5/webcomponents-react"
 import React from "react";
 import Icons from "../utils/Icons";
+import ManagementTile from "../tile/ManagementTile";
 
 const ManagementPage = () => {
-
-    const tileDimensions = {height: "180px", width: "180px"};
 
     return (
         <Page
@@ -29,30 +28,27 @@ const ManagementPage = () => {
                 justifyContent="Center"
             >
                 <ProductSwitch>
-                    <ProductSwitchItem
+                    <ManagementTile
                         icon={Icons.LIST}
-                        titleText="Mapping Table"
+                        title={'Mapping Table'}
                         onClick={() => {
-                            alert("hoi")
+                            alert("Hoi")
                         }}
-                        style={tileDimensions}>
-                    </ProductSwitchItem>
-                    <ProductSwitchItem
+                    />
+                    <ManagementTile
                         icon={Icons.UPLOAD}
-                        titleText="Upload CSV"
+                        title="Upload CSV"
                         onClick={() => {
                             alert("hoi")
                         }}
-                        style={tileDimensions}>
-                    </ProductSwitchItem>
-                    <ProductSwitchItem
+                    />
+                    <ManagementTile
                         icon={Icons.PROCESS}
-                        titleText={"Processes"}
+                        title={"Processes"}
                         onClick={() => {
                             alert("hoi")
                         }}
-                        style={tileDimensions}>
-                    </ProductSwitchItem>
+                    />
                 </ProductSwitch>
             </FlexBox>
         </Page>
