@@ -2,9 +2,12 @@
 
 Ui library to play around with React and UI5 Web components
 
-## Development
+## Structure
 
-`npm run start`
+All created components should be stored in the components' folder.
+
+The example folder, is created to have the option to check, and test the created components.
+However, these can only be tested once they are deployed. (setup for now)
 
 ## How to import
 - Generate a token in GitHub with at least read:package property
