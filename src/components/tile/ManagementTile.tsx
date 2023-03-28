@@ -1,11 +1,6 @@
 import {ProductSwitchItem} from "@ui5/webcomponents-react";
 import React from "react";
-
-interface ManagementTileProps {
-    icon: string,
-    title: string
-    onClick: () => void;
-}
+import {ManagementTileProps} from "./ManagementTileProps";
 
 /**
  * Management tile which can be used to execute a redirect to a different page.

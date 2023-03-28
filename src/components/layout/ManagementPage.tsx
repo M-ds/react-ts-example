@@ -2,8 +2,13 @@ import {Bar, Button, FlexBox, Label, Page, ProductSwitch} from "@ui5/webcomponen
 import React from "react";
 import Icons from "../utils/Icons";
 import ManagementTile from "../tile/ManagementTile";
+import {ManagementTileProps} from "../tile/ManagementTileProps";
 
-const ManagementPage = () => {
+interface ManagementPageProps {
+    tiles: ManagementTileProps[]
+}
+
+const ManagementPage = (props: ManagementPageProps) => {
 
     return (
         <Page
@@ -28,27 +33,16 @@ const ManagementPage = () => {
                 justifyContent="Center"
             >
                 <ProductSwitch>
-                    <ManagementTile
-                        icon={Icons.LIST}
-                        title={'Mapping Table'}
-                        onClick={() => {
-                            alert("Hoi")
-                        }}
-                    />
-                    <ManagementTile
-                        icon={Icons.UPLOAD}
-                        title="Upload CSV"
-                        onClick={() => {
-                            alert("hoi")
-                        }}
-                    />
-                    <ManagementTile
-                        icon={Icons.PROCESS}
-                        title={"Processes"}
-                        onClick={() => {
-                            alert("hoi")
-                        }}
-                    />
+                    {
+                        props.tiles.map((tile, index) => (
+                            <ManagementTile
+                                key={index}
+                                icon={tile.icon}
+                                title={tile.title}
+                                onClick={tile.onClick}
+                            />
+                        ))
+                    }
                 </ProductSwitch>
             </FlexBox>
         </Page>
