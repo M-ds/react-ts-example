@@ -1,6 +1,6 @@
 {
   "name": "@m-ds/react-ts-example",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "sample project with react and typescript",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
