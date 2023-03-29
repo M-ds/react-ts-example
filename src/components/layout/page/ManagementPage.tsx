@@ -1,12 +1,7 @@
 import {Bar, Button, FlexBox, Label, Page, ProductSwitch} from "@ui5/webcomponents-react"
 import React from "react";
-import Icons from "../utils/Icons";
-import ManagementTile from "../tile/ManagementTile";
-import {ManagementTileProps} from "../tile/ManagementTileProps";
-
-interface ManagementPageProps {
-    tiles: ManagementTileProps[]
-}
+import ManagementTile from "../../tile/ManagementTile";
+import {ManagementPageProps} from "./ManagementPageProps";
 
 const ManagementPage = (props: ManagementPageProps) => {
 
@@ -15,10 +10,10 @@ const ManagementPage = (props: ManagementPageProps) => {
             header={
                 <Bar startContent=
                          {
-                             <Button icon={Icons.HOME} title="Go Home" onClick={() => alert("GO HOME!")}/>
+                             <Button icon={props.header.icon} title="Go Home" onClick={props.header.onClick}/>
                          }
                 >
-                    <Label>Management</Label>
+                    <Label>{props.header.headerTitle}</Label>
                 </Bar>
             }
             style={{
