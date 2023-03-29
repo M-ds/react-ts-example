@@ -1,7 +1,7 @@
 {
   "name": "@m-ds/react-ts-example",
-  "version": "0.0.4",
-  "description": "sample project with react and typescript",
+  "version": "0.0.5",
+  "description": "Component library to make frontend development easier within myBrand",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
@@ -20,7 +20,13 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@ui5/webcomponents": "^1.11.0",
+    "@ui5/webcomponents-base": "^1.11.0",
+    "@ui5/webcomponents-fiori": "^1.11.0",
+    "@ui5/webcomponents-icons": "^1.11.0",
+    "@ui5/webcomponents-react": "^1.12.0",
+    "@ui5/webcomponents-theming": "^1.11.0"
   },
   "author": "Michiel de Smet",
   "devDependencies": {
