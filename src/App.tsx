@@ -1,21 +1,48 @@
-import React from 'react';
 import './App.css';
-import MyCounter from "./components/MyCounter";
+import {ThemeProvider} from "@ui5/webcomponents-react";
+import React, {Component} from "react";
+import ManagementPage from "./components/layout/page/ManagementPage";
+import "@ui5/webcomponents-icons/dist/AllIcons.js";
+import Icons from "./components/utils/Icons";
+import {PageHeaderProps} from "./components/layout/header/PageHeaderProps";
+import {ManagementTileProps} from "./components/tile/ManagementTileProps";
 
-function App() {
-    return (
-        <div className="App">
-            <div>
-                <h2>Default counter</h2>
-                <MyCounter/>
-            </div>
-            <hr/>
-            <div>
-                <h2>Counter with predefined value</h2>
-                <MyCounter value={5}/>
-            </div>
-        </div>
-    );
+class App extends Component {
+
+    tiles: ManagementTileProps[] = [
+        {
+            icon: Icons.LIST, title: "Mapping Tabel", onClick: () => {
+                alert("mapping tabel")
+            }
+        },
+        {
+            icon: Icons.UPLOAD, title: "Upload CSV", onClick: () => {
+                alert("upload csv")
+            }
+        },
+        {
+            icon: Icons.PROCESS, title: "Processes", onClick: () => {
+                alert("processed")
+            }
+        }
+    ]
+
+    managementHeader: PageHeaderProps = {
+        icon: Icons.HOME,
+        headerTitle: "Management",
+        onClick: () => {
+            alert("Go Home");
+        }
+    }
+
+    render() {
+        return (
+            <ThemeProvider>
+                <ManagementPage tiles={this.tiles} header={this.managementHeader}/>
+            </ThemeProvider>
+        );
+    }
+
 }
 
 export default App;
