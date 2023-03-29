@@ -3,17 +3,17 @@ import React from "react";
 import ManagementTile from "../../tile/ManagementTile";
 import {ManagementPageProps} from "./ManagementPageProps";
 
-const ManagementPage = (props: ManagementPageProps) => {
+const ManagementPage = ({header, tiles}: ManagementPageProps) => {
 
     return (
         <Page
             header={
                 <Bar startContent=
                          {
-                             <Button icon={props.header.icon} title="Go Home" onClick={props.header.onClick}/>
+                             <Button icon={header.icon} title="Go Home" onClick={header.onClick}/>
                          }
                 >
-                    <Label>{props.header.headerTitle}</Label>
+                    <Label>{header.headerTitle}</Label>
                 </Bar>
             }
             style={{
@@ -29,7 +29,7 @@ const ManagementPage = (props: ManagementPageProps) => {
             >
                 <ProductSwitch>
                     {
-                        props.tiles.map((tile, index) => (
+                        tiles.map((tile, index) => (
                             <ManagementTile
                                 key={index}
                                 icon={tile.icon}

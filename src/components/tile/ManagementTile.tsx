@@ -9,7 +9,7 @@ import {ManagementTileProps} from "./ManagementTileProps";
  * @param props - ManagementTileProps
  * @constructor
  */
-const ManagementTile = (props: ManagementTileProps) => {
+const ManagementTile = ({icon, title, onClick}: ManagementTileProps) => {
 
     const tileDimension = {
         height: "180px",
@@ -18,9 +18,9 @@ const ManagementTile = (props: ManagementTileProps) => {
 
     return (
         <ProductSwitchItem
-            icon={props.icon}
-            titleText={props.title}
-            onClick={props.onClick}
+            icon={icon}
+            titleText={title}
+            onClick={onClick}
             style={tileDimension}
         />
     )
