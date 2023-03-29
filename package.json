@@ -1,6 +1,6 @@
 {
-  "name": "@mybrand-products/ui-library",
-  "version": "0.0.2",
+  "name": "@m-ds/react-ts-example",
+  "version": "0.0.5",
   "description": "Component library to make frontend development easier within myBrand",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -28,7 +28,7 @@
     "@ui5/webcomponents-react": "^1.12.0",
     "@ui5/webcomponents-theming": "^1.11.0"
   },
-  "author": "myBrand products",
+  "author": "Michiel de Smet",
   "devDependencies": {
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
