@@ -1,6 +1,6 @@
 {
-  "name": "@mybrand-products/react-ts-example",
-  "version": "0.0.1",
+  "name": "@mybrand-products/ui-library",
+  "version": "0.0.2",
   "description": "Component library to make frontend development easier within myBrand",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
