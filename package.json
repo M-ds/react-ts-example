@@ -1,7 +1,7 @@
 {
-  "name": "@m-ds/react-ts-example",
-  "version": "0.0.4",
-  "description": "sample project with react and typescript",
+  "name": "@mybrand-products/react-ts-example",
+  "version": "0.0.1",
+  "description": "Component library to make frontend development easier within myBrand",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
@@ -28,7 +28,7 @@
     "@ui5/webcomponents-react": "^1.12.0",
     "@ui5/webcomponents-theming": "^1.11.0"
   },
-  "author": "Michiel de Smet",
+  "author": "myBrand products",
   "devDependencies": {
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",

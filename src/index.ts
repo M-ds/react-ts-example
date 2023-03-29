@@ -2,6 +2,6 @@
  * This file stores all the exportable components.
  * Meaning, if these should be added to the library, add them here.
  */
-import MyCounter from "./components/MyCounter";
+import ManagementPage from "./components/layout/page/ManagementPage";
 
-export {MyCounter}
+export {ManagementPage}

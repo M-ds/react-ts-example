@@ -1,6 +1,6 @@
-# react-ts-example
+# UI library
 
-Ui library to play around with React and UI5 Web components
+Component library to make frontend development easier within myBrand for React.
 
 ## Development
 
@@ -16,7 +16,7 @@ Add changed code to the `App.tsx`
 - Generate a token in GitHub with at least read:package property
 - Create a file named `.npmrc`
 - Add the following lines in the file:
-    - @m-ds:registry=https://npm.pkg.github.com
+    - @mybrand-products:registry=https://npm.pkg.github.com
     - //npm.pkg.github.com/:_authToken=YOUR_TOKEN_FROM_STEP_1
 - run `npm install`
 
